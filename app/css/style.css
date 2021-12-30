@@ -43,6 +43,12 @@ nav{
     letter-spacing: 1px;
     font-weight: bold;
     font-size: 15px;
+    transition: all 0.2s;
+}
+
+.nav_ul-li a:hover{
+    color: #424242;
+    transition: all 0.2s;
 }
 
 .nav_burger{
@@ -164,13 +170,13 @@ nav{
     line-height: 38px;
     display: inline-block;
     opacity: 1;
-    transition: 0.2s;
+    transition: all 0.2s;
 }
 
 
 .footer_social a:hover{
     opacity: 0.7;
-    transition: 0.2s;
+    transition: all 0.2s;
 }
 
 .footer_ul{
@@ -192,11 +198,13 @@ nav{
 .footer_ul-li{
     display: inline-block;
     padding: 0 15px;
+    transition: all 0.2s;
 }
 
 
 .footer_ul-li:hover{
     opacity: 0.8;
+    transition: all 0.2s;
 }
 
 .footer .copyright{
