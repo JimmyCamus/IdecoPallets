@@ -19,6 +19,9 @@ nav{
     min-height: 8vh;
     background-color: #BEFAD2;
     z-index: 999;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .logo{
@@ -126,23 +129,105 @@ nav{
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.sticky + .content {
-    padding-top: 60px;
-}
-
 /* END navbar */
 
 
+/*START content*/
+
 .content{
     height: 1000px;
+    padding-top: 100px;
+    width: 90%;
+    min-height: 100vh;
+    margin: auto;
 }
+
+/*START about*/
+
+.content_about{
+    width: 100%;
+    min-height: 50vh;
+    margin: auto;
+}
+
+.content_about-container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.content_about-container-content{
+    float: left;
+    width: 55%;
+}
+
+.about-img{
+    float: right;
+    width: 40%;
+}
+
+.about-img img{
+    width: 60%;
+    height: auto;
+}
+
+.about-title{
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+.about-content h3{
+    margin-top: 20px;
+    color: #5d5d5d
+    font-size 21px;
+}
+
+.about-content p{
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+@media screen and (max-width: 768px){
+    .content_about-container{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px
+    }
+
+    .content_about-container-content{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    .about-img{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    .about-img img{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    
+    .about-title{
+        text-align: center;
+        font-size: 19px;
+    }
+}
+
+/*END about*/
+
+/*END content*/
 
 /*START footer*/
 .footer{
