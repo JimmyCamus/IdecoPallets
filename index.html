@@ -15,8 +15,8 @@
           <h4>Idecopallets</h4>
         </div>
         <ul class="nav_ul">
-            <li class="nav_ul-li"><a href="#">Sobre Nosotros</a></li>
-            <li class="nav_ul-li"><a href="#">Nuestros proyectos</a></li>
+            <li class="nav_ul-li"><a href="#about">Sobre Nosotros</a></li>
+            <li class="nav_ul-li"><a href="#portfolio">Nuestros proyectos</a></li>
             <li class="nav_ul-li"></i><a href="#">Contactanos</a></li>
         </ul>
         <div class="nav_burger">
@@ -39,7 +39,7 @@
 
   <div class="content">
 
-    <div class="content_about">
+    <div id="about" class="content_about">
       <div class="content_about-container">
         <div class="content_about-container-content">
           <div class="about-title">
@@ -59,6 +59,21 @@
       </div>
     </div>
 
+    <div id="portfolio" class="content_gallery">
+      <div class="content_gallery-container">
+        <h1>Portafolio</h1>
+        <div id="gallery"></div>
+      </div>
+      <div id="popup">
+        <img src="" alt="" id="selectedImage">
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="footer-wave_container">
+    <div class="footer-wave" style="overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #333333;"></path></svg></div>
   </div>
 
   <div class="footer">
@@ -70,19 +85,20 @@
         <i class="fab fa-facebook-square"></i>
       </a>
     </div>
-
+    
     <ul class="footer_ul">
       <li class="footer_ul-li"><a href="#">Inicio</a></li>
-      <li class="footer_ul-li"><a href="#">Sobre nosotros</a></li>
-      <li class="footer_ul-li"><a href="#">Nuestros proyectos</a></li>
+      <li class="footer_ul-li"><a href="#about">Sobre nosotros</a></li>
+      <li class="footer_ul-li"><a href="#portfolio">Nuestros proyectos</a></li>
       <li class="footer_ul-li"><a href="#">Contactanos</a></li>
     </ul>
-
+    
     <p class="copyright">
       Idecopallets <i class="far fa-copyright"></i> 2021
     </p>
   </div>
 
   <script src="app/js/script.js"></script>
+  <script src="app/js/galleryManager.js"></script>
 </body>
 </html>
