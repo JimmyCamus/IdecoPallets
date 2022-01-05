@@ -6,13 +6,13 @@ const selectedIndex = null;
 
 imageIndexes.forEach((i)=>{
     const image = document.createElement('img');
-    image.src = `/app/img/img_0${i}.jpg`;
+    image.src = `https://jimmycamus.github.io/IdecoPallets/app/img/img_0${i}.jpg`;
     image.alt = '';
     image.classList.add('gallery-img');
 
     image.addEventListener('click', ()=>{
         popup.style.transform = `translateY(0)`;
-        selectedImage.src = `/app/img/img_0${i}.jpg`;
+        selectedImage.src = `https://jimmycamus.github.io/IdecoPallets/app/img/img_0${i}.jpg`;
         selectedImage.alt = '';
     });
 
