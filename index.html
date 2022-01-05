@@ -17,7 +17,7 @@
         <ul class="nav_ul">
             <li class="nav_ul-li"><a href="#about">Sobre Nosotros</a></li>
             <li class="nav_ul-li"><a href="#portfolio">Nuestros proyectos</a></li>
-            <li class="nav_ul-li"></i><a href="#">Contactanos</a></li>
+            <li class="nav_ul-li"></i><a href="#contact">Contactanos</a></li>
         </ul>
         <div class="nav_burger">
           <div class="line1"></div>
@@ -46,8 +46,9 @@
             <h1>Sobre Nosotros</h1>
           </div>
           <div class="about-content">
-            <h3>SubTitulo</h3>
+            <h3>Sub titulo de ejemplo</h3>
             <p>
+              parrafo de ejemplo:
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus vitae obcaecati aliquam molestias eveniet quasi, 
               deleniti voluptatibus quas eum adipisci quisquam temporibus id ipsa ex eius quae nisi nemo nobis!
             </p>
@@ -69,6 +70,82 @@
       </div>
     </div>
 
+    <div id="contact" class="content_contact">
+      <div class="content_contact-container">
+        <div class="contact-info">
+          <h2>ESTEMOS EN CONTACTO</h2>
+          <p class="text">
+            ¿Quiere realizar un proyecto ecoamigable y brindarle una estetica rustica a su hogar?
+            Contactenos a los siguientes canales de comunicación:
+            
+          </p>
+
+          <div class="info">
+            <div class="information">
+              <i class="fas fa-envelope"></i>
+              <p>Correo@correo.com</p>
+            </div>
+
+            <div class="information">
+              <i class="fas fa-phone"></i>
+              <p>+56 9 12345678</p>
+            </div>
+          </div>
+
+          <div class="social">
+            <p>Conectese con nosotros en nuestras redes sociales</p>
+
+            <div class="social-icons">
+              <a href="https://www.instagram.com/idecopallets/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.facebook.com/Ideco-Pallets-113941240390639/" target="_blank">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="contact-form">
+          <form action="app/php/mailer.php" method="POST">
+            <h2>CONTACTENOS</h2>
+            <div class="form-group">
+              <label for="name">Nombres</label>
+              <input class="input" type="text" name="name" id="name-input">
+              <span>Nombres</span>
+            </div>
+            
+            <div class="form-group">
+              <label for="lastName">Apellidos</label>
+              <input class="input" type="text" name="lastName" id="lastName-input">
+              <span>Apellidos</span>
+            </div>
+  
+            <div class="form-group">
+              <label for="phone">Número</label>
+              <input class="input" type="text" name="phone" id="phone-input">
+              <span>Número</span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Correo</label>
+              <input class="input" type="text" name="email" id="email-input">
+              <span>Correo</span>
+            </div>
+  
+            <div class="form-group contact-textarea">
+              <label for="message">Mensaje</label>
+              <textarea class="input" name="message" id="message-textarea"></textarea>
+              <span>Mensaje</span>
+            </div>
+  
+            <input type="submit" value="Enviar" class="btn">
+  
+          </form>
+        </div>
+      </div>
+    </div>
 
   </div>
 
@@ -90,15 +167,17 @@
       <li class="footer_ul-li"><a href="#">Inicio</a></li>
       <li class="footer_ul-li"><a href="#about">Sobre nosotros</a></li>
       <li class="footer_ul-li"><a href="#portfolio">Nuestros proyectos</a></li>
-      <li class="footer_ul-li"><a href="#">Contactanos</a></li>
+      <li class="footer_ul-li"><a href="#contact">Contactanos</a></li>
     </ul>
     
     <p class="copyright">
-      Idecopallets <i class="far fa-copyright"></i> 2021
+      Idecopallets <i class="far fa-copyright"></i> 2022
     </p>
   </div>
 
-  <script src="app/js/script.js"></script>
+  <script src="app/js/heroManager.js"></script>
   <script src="app/js/galleryManager.js"></script>
+  <script src="app/js/navManager.js"></script>
+  <script src="app/js/formManager.js"></script>
 </body>
 </html>
