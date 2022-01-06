@@ -7,10 +7,12 @@ const typingHero = () =>{
     let hero_letter = '';
     let typing = true;
     let time = 0;
+    let full = false;
 
     (function write(){
     
         if (!typing){
+            full = false;
             hero_letter = hero_currentText.slice(0, --hero_index);
             document.querySelector('.hero_dynamic-text').textContent = hero_letter;
             if (hero_letter.length === 0){
@@ -18,7 +20,7 @@ const typingHero = () =>{
                 hero_index = 0;
                 typing = true;
             }
-            time = 250;
+            time = 150;
         }
         else{
             if (hero_count === hero_texts.length){
@@ -32,9 +34,14 @@ const typingHero = () =>{
         
             if (hero_letter.length === hero_currentText.length){
                 typing = false;
+                full = true;
             }
 
-            time = 300;
+            time = 200;
+        }
+
+        if (full){
+            time = 2000;
         }
     
         setTimeout(write, time);
